@@ -104,7 +104,10 @@
               "domain": [0, 1500000000],
               "range": [10, 400]
           },
-            "legend": {"format": ".1s"}
+          "legend": {
+            "format": "d",
+            "labelExpr": "datum.value >= 1000000000 ? (datum.value / 1000000000) + 'B' : datum.value >= 1000000 ? (datum.value / 1000000) + 'M' : datum.label"
+        }
           },
           "color": {
             "field": "Region",
