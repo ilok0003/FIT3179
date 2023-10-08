@@ -1,8 +1,22 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 40px;  /* Added padding to the body */
+    background-color: #f4f4f4;
+}
+
+.visualization {
+    margin-bottom: 40px;  /* Spacing between visualizations */
+    padding: 20px;
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
 #choropleth_map {
-	top:100px;
-	bottom: 100px; 
-	left: 100px;
-	right: 100px;
-	/*height: 1000px;
-	width: 800px; */
+    position: absolute;
+    top: 120px;  /* Adjusted the positioning for more spacing */
+    bottom: 120px;
+    left: 120px;
+    right: 120px;
 }
