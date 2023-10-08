@@ -1,12 +1,27 @@
 body {
     font-family: Arial, sans-serif;
     margin: 0;
-    padding: 40px;  /* Added padding to the body */
+    padding: 40px; 
     background-color: #f4f4f4;
 }
 
+.container {
+    max-width: 1200px; /* Added this to restrict the width and center content */
+    margin: 0 auto; /* Centers the container */
+    padding: 20px;
+}
+
+h1 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+p {
+    margin-bottom: 40px;
+}
+
 .visualization {
-    margin-bottom: 40px;  /* Spacing between visualizations */
+    margin-bottom: 40px;
     padding: 20px;
     background-color: #ffffff;
     border: 1px solid #e0e0e0;
@@ -15,7 +30,7 @@ body {
 
 #choropleth_map {
     position: absolute;
-    top: 120px;  /* Adjusted the positioning for more spacing */
+    top: 120px;
     bottom: 120px;
     left: 120px;
     right: 120px;
