@@ -1,7 +1,7 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": {
-    "text": "Malaria Cases per 10,000 population (2017)",
+    "text": "Influenza Cases per 10,000 population (2017)",
     "fontSize": 16,
     "fontWeight": "bold"
   },
