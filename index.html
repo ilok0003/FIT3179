@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- Import Vega & Vega-Lite (does not have to be from CDN) -->
+  <script src="https://cdn.jsdelivr.net/npm/vega@5.22.1"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.5.0"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.21.0"></script>
+  
+  <!-- CSS file -->
+  <link rel="stylesheet" type="text/css" href="css/styles.css" media="all">
+
+
+</head>
+<body>
+  
+<div id="vis1"></div>
+<div id="vis2"></div>
+
+<script type="text/javascript">
+
+  // var specVis1 = "choropleth_malaria.vg.json";
+  // vegaEmbed('#choropleth_map', specVis1).then(function(result) {
+  //   // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+  // }).catch(console.error);
+
+
+  var specVis1 = "choropleth_malaria.vg.json";
+  var specVis2 = "scatterplot_interactive.vg.json";
+  vegaEmbed('#vis1', specVis1, { "actions": false });
+  vegaEmbed('#vis2', specVis2, { "actions": false }).then(function (result) {
+    // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+  }).catch(console.error);
+
+
+</script>
+
+</body>
+</html>
