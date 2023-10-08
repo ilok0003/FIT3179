@@ -98,17 +98,17 @@
                 "Western Pacific" 
               ],
               "range": [
-                "#377eb8",
-                "#984ea3",
-                "#ff7f00",
-                "#a6cee3",
-                "#ffff33",
-                "#a65628"
+                "#1f77b4",
+                "#ff7f0e",
+                "#2ca02c",
+                "#d62728",
+                "#9467bd",
+                "#8c564b"
               ]
               
             }
           },
-          "opacity": {"value": 0.6},
+          "opacity": {"value": 0.8},
           "tooltip": [
             {"field": "Country", "type": "nominal"},
             {"field": "Total_cases", "type": "quantitative", "title": "Total Cases"},
@@ -126,20 +126,20 @@
           "type": "text",
           "align": "right",
           "baseline": "middle",
-          "dx": -12,
-          "fontSize": 11.5,
-          "fontStyle": "italic"
+          "dx": -10,
+          "fontSize": 13,
+          "fontWeight": "bold"
         },
         "encoding": {
-          "text": {"field": "Country", "type": "nominal"},
-          "color": {"value": "black"},
-          "opacity": {
+          "text": {
             "condition": {
-              "test": "datum['Country'] == 'China' || datum['Country'] == 'Nigeria' || datum['Country'] == 'India' || datum['Country'] == 'Zimbabwe' || datum['Country'] == 'Italy' || datum['Country'] == 'Yemen' ||  datum['Country'] == 'United States'",
-              "value": 1
+              "test": "(datum.Total_cases > 5000000 || datum.Deaths > 50000) && datum['Country'] !== 'China' && datum['Country'] !== 'India'",
+              "field": "Country",
+              "type": "nominal"
             },
-            "value": 0
+            "value": ""
           },
+          "color": {"value": "#333"},
           "tooltip": [
             {"field": "Country", "type": "nominal"},
             {"field": "Total_cases", "type": "quantitative", "title": "Total Cases"},
