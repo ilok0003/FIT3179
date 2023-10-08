@@ -100,10 +100,10 @@
             "field": "Population",
             "type": "quantitative",
             "scale": {
-              "type": "threshold",
-              "domain": [1000000, 10000000, 50000000, 100000000, 500000000],
-              "range": [10, 50, 150, 200, 300, 400]
-            },
+              "type": "sqrt",
+              "domain": [0, 500000000],
+              "range": [10, 400]
+          },
             "legend": {"format": ".1s"}
           },
           "color": {
@@ -154,7 +154,7 @@
         "encoding": {
           "text": {
             "condition": {
-              "test": "datum.Total_cases > 10000000 || datum.Deaths > 100000", 
+              "test": "datum.Population > 10000000 || datum.Deaths > 100000", 
               "field": "Country",
               "type": "nominal"
             },
