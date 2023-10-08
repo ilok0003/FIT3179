@@ -101,7 +101,7 @@
             "type": "quantitative",
             "scale": {
               "type": "sqrt",
-              "domain": [0, 500000000],
+              "domain": [0, 1500000000],
               "range": [10, 400]
           },
             "legend": {"format": ".1s"}
@@ -154,7 +154,7 @@
         "encoding": {
           "text": {
             "condition": {
-              "test": "datum.Population > 10000000 || datum.Deaths > 100000", 
+              "test": "datum.Population > 100000000 || datum.Deaths > 10000", 
               "field": "Country",
               "type": "nominal"
             },
