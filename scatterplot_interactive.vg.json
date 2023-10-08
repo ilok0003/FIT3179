@@ -1,6 +1,7 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
     "config": {
+      "font": "Arial",
       "title": {
           "font": "Arial",
           "fontSize": 20,
